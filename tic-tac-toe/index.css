@@ -1,0 +1,94 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+html {
+  background: url(./images/back.gif) no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  text-decoration: underline;
+}
+
+section {
+  text-align: center;
+}
+
+.game--container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  width: 306px;
+  margin: 50px auto;
+  color: white;
+}
+
+.cell {
+  font-family: "Permanent Marker", cursive;
+  width: 100px;
+  height: 100px;
+  -webkit-box-shadow: 0 0 0 1px #333333;
+          box-shadow: 0 0 0 1px #333333;
+  border: 1px solid #333333;
+  cursor: pointer;
+  line-height: 100px;
+  font-size: 60px;
+}
+
+.game--restart {
+  background: #40f546;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10%;
+  -webkit-box-shadow: 4px 8px white;
+          box-shadow: 4px 8px white;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.game--restart:hover {
+  -webkit-box-shadow: 8px 16px #888888;
+          box-shadow: 8px 16px #888888;
+  cursor: pointer;
+  background: #00ff087e;
+}
+
+.game--status {
+  background: -webkit-gradient(linear, left top, right top, from(#6666ff), color-stop(#0099ff), color-stop(#00ff00), color-stop(white), to(#6666ff));
+  background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, white, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-animation: rainbow_animation 4s ease-in-out infinite;
+          animation: rainbow_animation 4s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+@-webkit-keyframes rainbow_animation {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes rainbow_animation {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+}
+/*# sourceMappingURL=index.css.map */
